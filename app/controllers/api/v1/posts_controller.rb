@@ -10,7 +10,7 @@ module Api
 
         pagy, posts = pagy(Post.latest, items: params[:per_page], page: params[:page])
         response.set_header('X-Pages', pagy.pages)
-        response.set_header('X-Count', pagy.count)
+        response.set_header('X-All_posts', pagy.count)
 
         render json: posts
       end

@@ -14,6 +14,7 @@ gem 'puma', '~> 3.11'
 gem 'pg', '~> 1.1', '>= 1.1.4'
 gem 'pagy'
 gem 'pry-rails'
+gem 'bootstrap', '~> 4.2.1'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 # gem 'jwt'
@@ -33,7 +34,7 @@ gem 'active_model_serializers', '~> 0.10.8'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'sqlite3'
+  gem 'sqlite3', '~> 1.3.6'
   gem 'rspec-rails', '~> 3.8'
   gem 'factory_bot_rails'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
