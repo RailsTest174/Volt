@@ -1,0 +1,8 @@
+.container
+  .row.justify-content-md-center.mt-5
+    .form
+      = form_for @user, as: :user, url: upload_path do |f|
+        .form-group
+          = f.file_field :avatar, class: 'form-control-file'
+        .form-group
+          = f.submit 'Загрузить', class: 'btn btn-primary'

@@ -15,6 +15,16 @@ gem 'pg', '~> 1.1', '>= 1.1.4'
 gem 'pagy'
 gem 'pry-rails'
 gem 'bootstrap', '~> 4.2.1'
+gem 'jquery-rails'
+gem 'carrierwave', '~> 1.0'
+gem 'mini_magick'
+gem 'slim'
+
+gem 'sass-rails'
+gem 'uglifier'
+gem 'coffee-rails'
+gem 'turbolinks'
+gem 'rack-cors'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 # gem 'jwt'
@@ -37,6 +47,7 @@ group :development, :test do
   gem 'sqlite3', '~> 1.3.6'
   gem 'rspec-rails', '~> 3.8'
   gem 'factory_bot_rails'
+  gem 'database_cleaner'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
 

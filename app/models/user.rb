@@ -8,6 +8,8 @@ class User < ApplicationRecord
   validates :email    , presence: true
   validates :password , presence: true
 
+  mount_uploader :avatar, AvatarUploader
+
   private
 
   def generate_token
